@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/transaction-tracker/static/js/main.72cfe925.chunk.js",
+    "main.js.map": "/transaction-tracker/static/js/main.72cfe925.chunk.js.map",
+    "runtime-main.js": "/transaction-tracker/static/js/runtime-main.4008a6b7.js",
+    "runtime-main.js.map": "/transaction-tracker/static/js/runtime-main.4008a6b7.js.map",
+    "static/js/2.54ce9818.chunk.js": "/transaction-tracker/static/js/2.54ce9818.chunk.js",
+    "static/js/2.54ce9818.chunk.js.map": "/transaction-tracker/static/js/2.54ce9818.chunk.js.map",
+    "index.html": "/transaction-tracker/index.html",
+    "precache-manifest.a24c937ab7442f4489be90f33505c0f1.js": "/transaction-tracker/precache-manifest.a24c937ab7442f4489be90f33505c0f1.js",
+    "service-worker.js": "/transaction-tracker/service-worker.js",
+    "static/js/2.54ce9818.chunk.js.LICENSE.txt": "/transaction-tracker/static/js/2.54ce9818.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4008a6b7.js",
+    "static/js/2.54ce9818.chunk.js",
+    "static/js/main.72cfe925.chunk.js"
+  ]
+}
