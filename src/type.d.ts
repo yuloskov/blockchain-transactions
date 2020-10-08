@@ -1,6 +1,6 @@
 interface ITransaction {
-  fromAddr: string
-  toAddr: string
+  fromAddr: string[]
+  toAddr: string[]
   amount: number
 }
 

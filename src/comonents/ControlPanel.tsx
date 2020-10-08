@@ -38,18 +38,16 @@ export default function ControlPanel() {
     ws.onmessage = evt => {
       const message = JSON.parse(evt.data);
 
-      const inputs = message.x.inputs;
-      const outputs = message.x.out;
-      if (inputs.length === 0 || outputs.length === 0) {
-        return;
-      }
+      // extract the needed data from the message
+      const fromAddresses = message.x.inputs.map((input: any) => `${input.prev_out.addr}\n`);
+      const toAddresses = message.x.out.map((output: any) => `${output.addr}\n`);
+      const amount = message.x.out.reduce((sum: number, out: any) => sum + out.value, 0);
 
       const transaction = {
-        fromAddr: inputs[0].prev_out.addr,
-        toAddr: outputs[0].addr,
-        amount: outputs[0].value / 100000000, // divide to get BTC from satoshi
+        fromAddr: fromAddresses,
+        toAddr: toAddresses,
+        amount: amount / 100000000, // divide to get BTC from satoshi
       };
-      console.log(message)
       addTrans(transaction);
     };
 
