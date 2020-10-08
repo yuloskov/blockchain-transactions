@@ -14,9 +14,11 @@ const useStyles = makeStyles({
   }
 });
 
+const socket_addr = 'wss://ws.blockchain.info/inv';
+
 export default function ControlPanel() {
   const dispatch: Dispatch<any> = useDispatch();
-  const ws = new WebSocket('wss://ws.blockchain.info/inv');
+  const ws = new WebSocket(socket_addr);
 
   const classes = useStyles();
 
