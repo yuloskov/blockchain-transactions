@@ -5,7 +5,7 @@ import thunk from "redux-thunk";
 import {Provider} from "react-redux";
 import {createStore, applyMiddleware, Store} from "redux";
 
-import App from './comonents/App';
+import App from './components/App';
 import reducer from "./store/reducer";
 
 const store: Store<TransactionState, TransactionAction> & {
